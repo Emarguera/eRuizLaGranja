@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/estebanpadilla/starter.git"
+    "url": "git+https://github.com/Emarguera/starter.git"
   },
   "keywords": [],
   "author": "Esteban Padilla",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/estebanpadilla/starter/issues"
+    "url": "https://github.com/Emarguera/starter/issues"
   },
-  "homepage": "https://github.com/estebanpadilla/starter#readme",
+  "homepage": "https://github.com/Emarguera/starter#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13"
   }
