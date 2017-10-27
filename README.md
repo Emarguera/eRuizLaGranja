@@ -1,2 +1,3 @@
-# granja
-Un proyecto para praticar OOP.
+eRuizLaGranja
+
+Exámen 2 Progra Dinámica
