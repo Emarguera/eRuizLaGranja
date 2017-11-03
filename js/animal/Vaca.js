@@ -3,7 +3,9 @@ var Vaca = (
 
 		function Vaca(pnombre) {
 			Animal.call(this, pnombre);
+			this.color;
 		}
+
 		//Heredar los metodos definidos en Animal (prototype)
 		Vaca.prototype = Object.create(Animal.prototype);
 		Vaca.prototype.constructor = Animal;

@@ -1,10 +1,10 @@
-var Pato = (
+var Granja = (
 	function () {
-		function Pato() {
+		function Granja() {
             
 		}
 		//Class Methods
 
-		return Pato;
+		return Granja;
 	}
 )();

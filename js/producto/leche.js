@@ -1,7 +1,10 @@
 var Leche = (
 	function () {
-		function Leche(pnombreLeche) {
-			this.nombre=pnombreLeche;
+		function Leche() {
+            
 		}
+		//Class Methods
+
+		return Leche;
 	}
 )();

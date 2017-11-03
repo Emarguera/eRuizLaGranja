@@ -1,7 +1,10 @@
 var Tocino = (
 	function () {
-		function Tocino(pnombreTocino) {
-			this.nombre=pnombreTocino;
+		function Tocino() {
+            
 		}
+		//Class Methods
+
+		return Tocino;
 	}
 )();

@@ -2,7 +2,7 @@ window.addEventListener('load', init, false);
 
 function init() {
 
-    var cusu = new Animal('Batido', 1, 2, 10, 'mediana', 10, 5, 5, 'ninguna', 'ninguno');
+    //var cusu = new Animal('Batido', 1, 2, 10, 'mediana', 10, 5, 5, 'ninguna', 'ninguno');
     //cusu.comer();
     //cusu.caminar();
     //cusu.beber();
@@ -50,7 +50,8 @@ function init() {
         var title = document.createElement('h5');
         title.style.marginTop = '0px';
         title.style.marginBottom = '0px';
-        title.innerHTML = animals[i].nombre;;
+        title.innerHTML = animals[i].nombre;
+        title.classList.add('nombreAnimal');
         animal.appendChild(title);
 
         animal.addEventListener('click', onAnimalCardClick, false);

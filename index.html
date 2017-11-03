@@ -5,79 +5,49 @@
     <title>App</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">    
     <script src="app.js"></script>
+
+    <script src="js/Agua.js"></script>
+    <script src="js/Alimento.js"></script>
+    <script src="js/animal/Animal.js"></script>
+    <script src="js/ave/Ave.js"></script>
+    <script src="js/Bebedero.js"></script>
+    <script src="js/animal/Caballo.js"></script>
+    <script src="js/animal/Cerdo.js"></script>
+    <script src="js/Cubeta.js"></script>
+    <script src="js/ave/Gallina.js"></script>
+    <script src="js/animal/Gato.js"></script>
+    <script src="js/Granero.js"></script>
+    <script src="js/producto/Huevos.js"></script>
+    <script src="js/producto/Leche.js"></script>
+    <script src="js/Maiz.js"></script>
+    <script src="js/Pasto.js"></script>
+    <script src="js/ave/Pato.js"></script>
+    <script src="js/animal/Perro.js"></script>
+    <script src="js/persona/Persona.js"></script>
+    <script src="js/producto/Producto.js"></script>
+    <script src="js/producto/Tocino.js"></script>
+    <script src="js/animal/Vaca.js"></script>
+
+
 </head>
 
 <body>
-    <div class="container" id="mainContainer">
-        <div class="container col-lg-4 col-md-3 col-sm-6" id="controls">
-            <div class="" id="farmControls">
-                <p>Farm Controls</p>
+    <div class="mainContainer">
+        <div class="popupContainer"></div>
+        <div class="controlsContainer">
+            <div class="farmContainer">
+
             </div>
-            <br>
-            <div class="" id="animalControls">
-                <p>Animal Controls</p>
+
+            <div class="animalContainer">
+
             </div>
         </div>
 
-        <div class="container col-lg-8 col-md-9 col-sm-6" id="animalContainer">
-            <div class="profile-header-container">
-                <div class="profile-header-img col-lg-4 col-md-4 col-sm-12">
-                    <img class="img-circle" src="img/cat.png" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">Cat</span>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-header-container">
-                <div class="profile-header-img col-lg-4 col-md-4 col-sm-12">
-                    <img class="img-circle" src="img/dog.png" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">Dog</span>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-header-container">
-                <div class="profile-header-img col-lg-4 col-md-4 col-sm-12">
-                    <img class="img-circle" src="img/cow.png" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">Cow</span>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-header-container">
-                <div class="profile-header-img col-lg-4 col-md-4 col-sm-12">
-                    <img class="img-circle" src="img/horse.png" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">Horse</span>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-header-container">
-                <div class="profile-header-img col-lg-4 col-md-4 col-sm-12">
-                    <img class="img-circle" src="img/duck.png" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">Duck</span>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-header-container">
-                <div class="profile-header-img col-lg-4 col-md-6 col-sm-12">
-                    <img class="img-circle" src="img/chicken.png" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">Chicken</span>
-                    </div>
-                </div>
-            </div>
+        <div id="animalsContainer" class="animalsContainer">
+           <!-- <div class="animalCardContainer"></div>-->
         </div>
 
     </div>

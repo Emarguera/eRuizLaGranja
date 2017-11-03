@@ -1,7 +1,10 @@
 var Huevos = (
 	function () {
-		function Huevos(pnombreHuevos) {
-			this.nombre=pnombreHuevos;
+		function Huevos() {
+            
 		}
+		//Class Methods
+
+		return Huevos;
 	}
 )();

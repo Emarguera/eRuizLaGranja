@@ -1,7 +1,10 @@
 var Granjero = (
 	function () {
-		function Granjero(pnombreGranjero) {
-			this.nombre=pnombreGranjero;
+		function Granjero() {
+            
 		}
+		//Class Methods
+
+		return Granjero;
 	}
 )();

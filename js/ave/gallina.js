@@ -1,7 +1,10 @@
 var Gallina = (
 	function () {
-		function Gallina(pnombreGallina) {
-			this.nombre=pnombreGallina;
+		function Gallina() {
+            
 		}
+		//Class Methods
+
+		return Gallina;
 	}
 )();
