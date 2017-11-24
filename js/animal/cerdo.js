@@ -16,7 +16,7 @@ var Cerdo = (
 		}
 
 		Cerdo.prototype.brincar = function () {
-			console.log(this.nombre + ' soy un cerdo y estoy comiendo.');
+			console.log(this.nombre + ' soy un cerdo y estoy brincando.');
 		}
 
 		return Cerdo;

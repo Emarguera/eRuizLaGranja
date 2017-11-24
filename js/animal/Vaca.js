@@ -16,7 +16,7 @@ var Vaca = (
 		}
 
 		Vaca.prototype.brincar = function () {
-			console.log(this.nombre + ' soy una vaca y estoy comiendo.');
+			console.log(this.nombre + ' soy una vaca y estoy brincando.');
 		}
 
 		return Vaca;

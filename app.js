@@ -12,20 +12,24 @@ function init() {
     vaca.color = 'blue';
     animals.push(vaca);
 
-    vaca = new Vaca('Clotilde');
+    vaca = new Cerdo('Clotilde');
     vaca.color = 'green';
     animals.push(vaca);
 
-    vaca = new Vaca('Florina');
-    vaca.color = 'cyan';
+    caballo = new Caballo('Florina');
+    caballo.color = 'cyan';
     animals.push(vaca);
 
-    vaca = new Vaca('Juana');
-    vaca.color = 'brown';
+    caballo = new Caballo('Juana');
+    caballo.color = 'brown';
     animals.push(vaca);
 
-    vaca = new Vaca('Clara');
-    vaca.color = 'black';
+    perro = new Perro('Clara');
+    perro.color = 'black';
+    animals.push(vaca);
+
+    perro = new Gato('Clara');
+    perro.color = 'black';
     animals.push(vaca);
 
     console.log(animals);

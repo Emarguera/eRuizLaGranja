@@ -16,7 +16,7 @@ var Caballo = (
 		}
 
 		Caballo.prototype.brincar = function () {
-			console.log(this.nombre + ' soy un caballo y estoy comiendo.');
+			console.log(this.nombre + ' soy un caballo y estoy brincando.');
 		}
 
 		return Caballo;
