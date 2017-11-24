@@ -2,6 +2,8 @@ var Perro = (
 	function () {
 		function Perro(pnombre, pedad, paltura, ppeso, ptamanno, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipodeProduccion) {
                   Animal.call(this, pnombre, pedad, paltura, ppeso, ptamanno, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipodeProduccion)
+                  
+                  this.tipo = 'perro';
             /*this.nombre = pnombre;
             this.edad = pedad;
             this.altura = paltura;

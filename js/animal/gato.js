@@ -2,6 +2,8 @@ var Gato = (
 	function () {
 		function Gato(pnombre, pedad, paltura, ppeso, ptamanno, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipodeProduccion) {
                   Animal.call(this, pnombre, pedad, paltura, ppeso, ptamanno, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipodeProduccion)
+                  this.color;
+                  this.tipo = 'gato';
             /*this.nombre = pnombre;
             this.edad = pedad;
             this.altura = paltura;

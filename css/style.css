@@ -2,7 +2,10 @@ html, body {
     padding: 0px;
     margin: 0px;
     width: 100%;
-    background-color: lightgreen;
+    background-image: url("../img/background_1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 150px;
 }
 
 .mainContainer {
@@ -12,14 +15,13 @@ html, body {
 }
 
 .popupContainer {
-    width: 18%;
+    width: 20%;
     min-width: 200px;
     color: lavender;
 }
 .controlsContainer {
     width: 15%;
     min-width: 200px;
-    background-color: lightgreen;;
 }
 
 .farmContainer, .animalContainer {
@@ -27,37 +29,126 @@ html, body {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    height: 310px;
+    min-height: 310px;
+    border: solid 0.1px black;
 }
 
 .farmContainer {
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(255, 255, 255, 0.597);;
 }
 
 .animalContainer {
-    background-color: lightpink;
+    background-color: rgba(255, 255, 255, 0.597);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .animalsContainer {
     width: 50%;
-    background-color: lightgreen;
 }
 
 .animalCardContainer{
     width: 28%;
     margin-left: 5%;
     height: 300px;
-    background-color: lavenderblush;
+    background-color: rgba(255, 255, 255, 0.597);
     margin-top: 10px;
     display: inline-flex;
     min-width: 180px;
+    border: solid 0.1px black;
+}
+
+.svg {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 20px;
 }
 
 .nombreAnimal {
-    color: fuchsia;
+    color: #796465;
     font-family: verdana;
     font-size: 16px;
     margin: 0 auto;
     padding-top: 10px;
     height: 20px;
+    text-align: center;    
+}
+
+#popupFormularioVaca, #popupFormularioGallina, #popupFormularioCerdo {
+    background-color: rgba(255, 255, 255, 0.597);
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+#popupComprar, #popupVender, #popupFormularioCompraAlimento, #popupFormularioCompraPasto, #popupFormularioCompraMaiz {
+    background-color: rgba(255, 255, 255, 0.597);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+    border: solid 0.1px black;
+}
+
+#popupComprar h4, #popupVender h4, #popupFormularioVaca h4, #popupFormularioGallina h4, #popupFormularioCerdo h4, #popupFormularioCompraAlimento h4, #popupFormularioCompraPasto h4, #popupFormularioCompraMaiz h4{
+    font-size: 20px;
+    color: #796465;
+    font-family: verdana;
+    text-align: center;
+    padding: 1px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#popupComprar input, #popupVender input, #popupFormularioCompraAlimento input, #popupFormularioCompraPasto input, #popupFormularioCompraMaiz input {
+    display: block;
+    margin: auto;
+    background-color: rgb(209, 52, 80);
+    border: none;
+    width: 150px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+#alimentoParaComprar, #pastoParaComprar, #maizParaComprar {
+    display: block;
+    margin-left:500px;
+    background-color: rgb(209, 52, 80);
+    border: none;
+    width: 150px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.compraVenta {
+    display: block;
+    margin:auto;
+    background-color: rgb(209, 52, 80);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.styleDatos {
+    font-family: verdana;
+    color: black;
+    padding: 20px;
+    padding-top: 1px;
+    line-height: 25px;
 }

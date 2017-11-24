@@ -1,6 +1,6 @@
 var Alimento = (
 	function () {
-		function ALimento() {
+		function Alimento() {
             
 		}
 		//Class Methods

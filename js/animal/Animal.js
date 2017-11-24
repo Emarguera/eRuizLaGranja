@@ -8,9 +8,16 @@ var Animal = (
             this.tamanno = ptamanno;
             this.capacidadEstomago = pcapacidadEstomago;
             this.capacidadConsumoAgua = pcapacidadConsumoAgua;
-            this.capacidadCOnsumoAlimento = pcapacidadConsumoAlimento;
+            this.capacidadConsumoAlimento = pcapacidadConsumoAlimento;
             this.capacidadProduccion = pcapacidadProduccion;
-            this.tipodeProduccion = ptipodeProduccion;
+            this.tipoDeProduccion = ptipodeProduccion;
+            this.felicidad = 50;
+            this.tiempo = 0;
+            this.FRAMERATE = 60;
+            this.cantidadDeProducto = 0;
+            this.tiempoDeProduction = 2 * this.FRAMERATE;
+            this.cantidadDeProductoPorTiempo = 1 * (this.felicidad / 100);
+
 		}
 		//Class Methods
 		Animal.prototype.comer = function () {
@@ -26,9 +33,17 @@ var Animal = (
         } 
         
         Animal.prototype.producir = function () {
-			console.log('Cada animal produce a su manera.');
-        } 
+            // console.log('Este animal no produce nada!');
+      };
 
-		return Animal;
-	}
+      Animal.prototype.crearProducto = function () {
+
+      }
+
+      Animal.prototype.update = function () {
+
+      }
+
+      return Animal;
+}
 )();
