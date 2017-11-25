@@ -121,49 +121,49 @@ function init() {
             switch(animals[i].tipo){
                 case 'gato':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "..eRuizLaGranja/img/cat.svg");
+                    foto.setAttribute("src", "eRuizLaGranja/img/cat.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break;
 
                 case 'perro':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "../img/dog.svg");
+                    foto.setAttribute("src", "/img/dog.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break;
 
                 case 'vaca':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "../img/cow.svg");
+                    foto.setAttribute("src", "/img/cow.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break; 
 
                 case 'gallina':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "../img/hen.svg");
+                    foto.setAttribute("src", "/img/chicken.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break; 
 
                 case 'pato':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "../img/duck.svg");
+                    foto.setAttribute("src", "/img/duck.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break;
 
                 case 'cerdo':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "../img/pig.svg");
+                    foto.setAttribute("src", "/img/pig.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break;
 
                 case 'caballo':
                     var foto = document.createElement("img");
-                    foto.setAttribute("src", "../img/horse.svg");
+                    foto.setAttribute("src", "/img/horse.svg");
                     foto.classList.add('svg');
                     animal.appendChild(foto);
                 break;
