@@ -2,174 +2,192 @@
 <html lang="en">
 
 <head>
-    <title>La Granja</title>
+    <title>App</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+
     <script src="app.js"></script>
-
-    <script src="js/Agua.js"></script>
-    <script src="js/Alimento.js"></script>
-    <script src="js/animal/Animal.js"></script>
-    <script src="js/ave/Ave.js"></script>
-    <script src="js/Bebedero.js"></script>
-    <script src="js/animal/Caballo.js"></script>
-    <script src="js/animal/Cerdo.js"></script>
-    <script src="js/Cubeta.js"></script>
-    <script src="js/ave/Gallina.js"></script>
-    <script src="js/animal/Gato.js"></script>
-    <script src="js/Granero.js"></script>
-    <script src="js/producto/Huevos.js"></script>
-    <script src="js/producto/Leche.js"></script>
-    <script src="js/Maiz.js"></script>
-    <script src="js/Pasto.js"></script>
-    <script src="js/ave/Pato.js"></script>
-    <script src="js/animal/Perro.js"></script>
-    <script src="js/persona/Persona.js"></script>
-    <script src="js/producto/Producto.js"></script>
-    <script src="js/producto/Tocino.js"></script>
-    <script src="js/animal/Vaca.js"></script>
-
-
+    <script src="js/animal.json"></script>
+    <script src="js/Animal/Animal.js"></script>
+    <script src="js/Animal/Vaca.js"></script>
+    <script src="js/Animal/Caballo.js"></script>
+    <script src="js/Animal/Cerdo.js"></script>
+    <script src="js/Animal/Gato.js"></script>
+    <script src="js/Animal/Perro.js"></script>
+    <script src="js/Animal/Ave/Gallina.js"></script>
+    <script src="js/Animal/Ave/Pato.js"></script>
+    <script src="js/Equipo/Bebedero.js"></script>
+    <script src="js/Equipo/Cubeta.js"></script>
+    <script src="js/Equipo/Granero.js"></script>
+    <script src="js/Equipo/Granja.js"></script>
+    <script src="js/Persona/Granjero.js"></script>
+    <script src="js/Persona/Persona.js"></script>
+    <script src="js/Producto/Huevos.js"></script>
+    <script src="js/Producto/Leche.js"></script>
+    <script src="js/Producto/Producto.js"></script>
+    <script src="js/Producto/Tocino.js"></script>
+    <script src="js/Provisiones/Agua.js"></script>
+    <script src="js/Provisiones/Alimento.js"></script>
+    <script src="js/Provisiones/Maiz.js"></script>
+    <script src="js/Provisiones/Pasto.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 </head>
 
-<body>
-    <div class="mainContainer">
-        <div class="popupContainer">
-            <div id="popupComprar" class = "hidden">
-                <h4>Comprar</h4>
-                <input type="button" value="Vaca" id="comprarVaca">
-                <input type="button" value="Gallina" id="comprarGallina">
-                <input type="button" value="Cerdo" id="comprarCerdo">
-                <input type="button" value="Alimento" id="comprarAlimento">
-                <input type="button" value="Pasto" id="comprarPasto">
-                <input type="button" value="Maíz" id="comprarMaiz">
-            </div>
-
-            <div id="popupVender" class = "hidden">
-                <h4>Vender</h4>
-                <input type="button" value="Huevos" id="venderHuevos">
-                <input type="button" value="Leche" id="venderLeche">
-                <input type="button" value="Tocino" id="venderTocino">
-                
-                <form id="popupFormularioVentaHuevos" class = "hidden">
-                    <h4>Cantidad de huevos a vender</h4>
-                    <input id="huevosParaVender">
-                    <input type="button" value="Vender" id="venderLosHuevos">
-                </form>
-
-                <form id="popupFormularioVentaLeche" class = "hidden">
-                    <h4>Cantidad de leche a vender</h4>
-                    <input id="lecheParaVender">
-                    <input type="button" value="Vender" id="venderLaLeche">
-                </form>
-
-                <form id="popupFormularioVentaTocino" class = "hidden">
-                    <h4>Cantidad de tocino a vender</h4>
-                    <input id="tocinoParaVender">
-                    <input type="button" value="Vender" id="venderElTocino">
-                </form>
-            </div>
-
-            <form id="popupFormularioVaca" class = "hidden">
-                <h4>Formulario para la compra de un animal</h4>
-                <input id="nombreVaca">
-                <input id="edadVaca">
-                <input id="alturaVaca">
-                <input id="pesoVaca">
-                <input id="tamannoVaca">
-                <input id="estomagoVaca">
-                <input id="aguaVaca">
-                <input id="alimentoVaca">
-                <input id="produccionVaca">
-                <input id="tipoProduccionVaca">
-                <input id="botonComprarVaca" class="hidden">
-            </form>
-
-            <form id="popupFormularioGallina" class = "hidden">
-                    <h4>Formulario para la compra de un animal</h4>
-                    <input id="nombreGallina">
-                    <input id="edadGallina">
-                    <input id="alturaGallina">
-                    <input id="pesoGallina">
-                    <input id="tamannoGallina">
-                    <input id="estomagoGallina">
-                    <input id="aguaGallina">
-                    <input id="alimentoGallina">
-                    <input id="produccionGallina">
-                    <input id="tipoProduccionGallina">
-                    <input id="botonComprarGallina" class="hidden">
-                </form>
-
-            <form id="popupFormularioCerdo" class = "hidden">
-                    <h4>Formulario para la compra de un animal</h4>
-                    <input id="nombreCerdo">
-                    <input id="edadCerdo">
-                    <input id="alturaCerdo">
-                    <input id="pesoCerdo">
-                    <input id="tamannoCerdo">
-                    <input id="estomagoCerdo">
-                    <input id="aguaCerdo">
-                    <input id="alimentoCerdo">
-                    <input id="produccionCerdo">
-                    <input id="tipoProduccionCerdo">
-                    <input id="botonComprarCerdo" class="hidden">
-            </form>
-
-            <form id="popupFormularioCerdo" class = "hidden">
-                <h4>Formulario para la compra de un animal</h4>
-                <input id="nombreCerdo">
-                <input id="edadCerdo">
-                <input id="alturaCerdo">
-                <input id="pesoCerdo">
-                <input id="tamannoCerdo">
-                <input id="estomagoCerdo">
-                <input id="aguaCerdo">
-                <input id="alimentoCerdo">
-                <input id="produccionCerdo">
-                <input id="tipoProduccionCerdo">
-                <input id="botonComprarCerdo" class="hidden">
-        </form>
-
-        <form id="popupFormularioCompraAlimento" class = "hidden">
-            <h4>Cantidad de alimento a comprar</h4>
-            <input id="alimentoParaComprar">
-            <input type="button" value="Comprar" id="comprarElAlimento">
-        </form>
-
-        <form id="popupFormularioCompraPasto" class = "hidden">
-            <h4>Cantidad de pasto a comprar</h4>
-            <input id="pastoParaComprar">
-            <input type="button" value="Comprar" id="comprarElPasto">
-        </form>
- 
-        <form id="popupFormularioCompraMaiz" class = "hidden">
-            <h4>Cantidad de maíz a comprar</h4>
-            <input id="maizParaComprar">
-            <input type="button" value="Comprar" id="comprarElMaiz">
-        </form>
-
-        </div>
-        <div class="controlsContainer">
-            <div class="farmContainer" id="farmContainer"> 
-                <h4 class="nombreAnimal">La Granja</h4>
-                <p id="datosGranja"></p>
-                <input id="botonComprar">
-                <input id="botonVender">
-            </div>
-
-            <div class="animalContainer" id="animalContainer">
-                <p id="datosAnimal"></p>
-                <input type="button" class="hidden" id="botonProducir">
-                <input type="button" class="hidden" id="botonBeber">
-                <input type="button" class="hidden" id="botonComer">
+<body class="container-fluid">
+    <div class="row">
+        <div id="main-container">
+            <div id="controlsContainer" class="col-sm-4 col-xs-4 col-md-3 col-lg-2">
+                <div id="farmContainer">
+                    <h5 id="farmContainer_tittle">Granja</h5>
+                    <div class="row">
+                        <ul id="provisions">
+                            <li id="farmContainer_money">Dinero:</li>
+                            <li id="farmContainer_egg">Huevos:</li>
+                            <li id="farmContainer_milk">Leche:</li>
+                            <li id="farmContainer_bacon">Tocino:</li>
+                            <li id="farmContainer_corn">Maiz:</li>
+                            <li id="farmContainer_food">Alimento:</li>
+                            <li id="farmContainer_grass">Pasto:</li>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-demo col-sm-12 col-xs-1 col-md-6" id="myBtn">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-demo col-xs-1 col-md-6" id="myBtnSell">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="animalContainer">
+                    <h5 id="farmContainer_tittle">Información Animal</h5>
+                    <div class="row">
+                        <ul class="listInfoAnimal">
+                            <li id="animalContainer_name"></li>
+                            <li id="animalContainer_age"></li>
+                            <li id="animalContainer_height"></li>
+                            <li id="animalContainer_weight"></li>
+                            <li id="animalContainer_capStomage"></li>
+                            <li id="animalContainer_capWater"></li>
+                            <li id="animalContainer_capFood"></li>
+                            <li id="animalContainer_capProduction"></li>
+                            <li id="animalContainer_kindProduction"></li>
+                            <li id="animalContainer_hapiness"></li>
+                            <li>
+                                <button type="button" class="btn btn-demo col-lg-3 col-md-3 col-xs-3 col-xl-3" id="comerBtn">Comer</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-demo col-lg-3 col-md-3 col-xs-3" id="beberBtn">Beber</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-demo col-lg-4 col-md-4 col-xs-4" id="acariciarBtn">Acariciar</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-demo col-lg-5 col-md-4 col-xs-10" id="recogerProductoBtn">Recoger</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-demo col-lg-5 col-md-4 col-xs-10" id="producirBtn">Producir</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="animalsContainer" class="animalsContainer">
+        <div id="animalsContainer" class="col-sm-8 col-xs-7 col-md-8 col-lg-9">
         </div>
-
     </div>
 </body>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Comprar</h4>
+            <p>Animales | Provisiones</p>
+        </div>
+        <div class="row modal-body">
+            <ul class="col-xs-12 col-md-12">
+                <li>
+                    <button id="btnBuyAnimals" class="btn btn-demo">Animales</button>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button id="buyFood" class="btn btn-demo">Alimento</button>
+                </li>
+                <li>
+                    <button id="buyGrass" class="btn btn-demo">Pasto</button>
+                </li>
+                <li>
+                    <button id="buyCorn" class="btn btn-demo">Maiz</button>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <span type="button" class="closes btn btn-demo">Cerrar</span>
+        </div>
+    </div>
+</div>
+
+<div id="myModalSell" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Vender</h4>
+            <p>| Productos de la Granja |</p>
+        </div>
+        <div class="row modal-body">
+            <ul>
+                <li class="col-xs-12 col-md-6 col-lg-4">
+                    <button id="sellEgg" class="btn btn-demo">Huevos</button>
+                    <li>
+                        <li class="col-xs-12 col-md-6 col-lg-4">
+                            <button id="sellMilk" class="btn btn-demo">Leche</button>
+                        </li>
+                        <li class="col-xs-12 col-md-6 col-lg-4">
+                            <button id="sellBacon" class="btn btn-demo">Tocino</button>
+                        </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <span type="button" class="close btn btn-demo">Cerrar</span>
+        </div>
+    </div>
+</div>
+
+<div id="myModalbuyAnimals" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Haz crecer tu farm</h4>
+            <p>| ¿Que animal deseas comprar? |</p>
+        </div>
+        <div class="row modal-body">
+            <div id="" class="select col-lg-12 col-md-12">
+                <label class="col-lg-5">Escoge el animal:</label>
+                <select class="col-lg-6" id="AnimalSelected">
+                    <option default>Elige un animal</option>
+                    <option value="Vaca">Vaca</option>
+                    <option value="Gallina">Gallina</option>
+                    <option value="Cerdo">Cerdo</option>
+                    <option value="Pato">Pato</option>
+                    <option value="Caballo">Caballo</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
+                </select>
+            </div>
+            <div class="putName col-lg-12">
+                <label class="col-lg-5">Ponle un name a tu animal:</label>
+                <input pattern="[ñáéíóúÁÉÍÓÚÑA-Za-z]" class="col-lg-6" id="nameAnimal" required>
+            </div>
+            <div class="saveName">
+                <button type="button" class="btn btn-demo" id="comprarAnimal">Comprar</button>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span type="button" class="closeA btn btn-demo">Cerrar</span>
+        </div>
+    </div>
+</div>
 
 </html>

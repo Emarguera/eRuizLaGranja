@@ -1,10 +1,8 @@
 var Huevos = (
 	function () {
-		function Huevos() {
-            
+		function Huevos(palmacenamiento) {
+			this.price = 10
 		}
-		//Class Methods
-
-		return Huevos;
+	return Huevos;
 	}
 )();

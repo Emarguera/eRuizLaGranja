@@ -1,62 +1,70 @@
-var Perro = (
+var Pato = (
 	function () {
 
-		function Perro(pnombre, pedad, paltura, ppeso, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipoDeProduccion, pfelicidad, onClick,pcomida) {
+		function Pato(pnombre, pedad, paltura, ppeso, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipoDeProduccion, pfelicidad, onClick) {
 			Animal.call(this, pnombre, pedad, paltura, ppeso, pcapacidadEstomago, pcapacidadConsumoAgua, pcapacidadConsumoAlimento, pcapacidadProduccion, ptipoDeProduccion, pfelicidad);
-			this.price = 100;
-			this.animalKind = 'Perro';
-			this.cantComida = 7;
-			this.cantAgua = 10;
+			this.price = 500;
+			this.animalKind = 'Pato';
+			this.cantidadDeProducto = 0;
+			this.tiempoDeProduction = 5 * this.FRAMERATE;
+			this.cantidadDeProductoPorTiempo = 1 * (this.felicidad / 100);
+			this.capacidadConsumoAgua = 40;
+			this.cantComida = 4;
+			this.cantAgua = 2;
 			this.onClick = onClick;
-			this.capacidadConsumoAgua = 35;
 			this.title = null;
 			this.infoHappy = null;
-			this.imageAnimal = null;
 			this.animalDiv = null;
+			this.imageAnimal = null;
 			this.addCard();
-			this.tipoComida = 'Alimento';
-			this.peso = 15
+			this.result = 0;
 		}
 		//Heredar los metodos definidos en Animal (prototype)
-		Perro.prototype = Object.create(Animal.prototype);
-		Perro.prototype.constructor = Animal;
+		Pato.prototype = Object.create(Animal.prototype);
+		Pato.prototype.constructor = Animal;
 
 		//Class Methods
-		Perro.prototype.comer = function () {
-			
+		Pato.prototype.comer = function () {
+
 			if (this.capacidadEstomago <= 0) {
 				console.log("El animal esta muy lleno");
-				}if (this.capacidadEstomago > 0) {
-					this.capacidadEstomago -= this.cantComida;
-					document.getElementById('animalContainer_capStomage').innerHTML = "Cap. de estomago: " + this.capacidadEstomago;
-					this.capacidadConsumoAlimento -= 1;
-					document.getElementById('animalContainer_capFood').innerHTML = "Consumo de alimento: " + this.capacidadConsumoAlimento;
-					this.felicidad += 1;
-					document.getElementById('animalContainer_hapiness').innerHTML = "Felicidad: " + this.felicidad + "%";
-				}if (this.capacidadConsumoAlimento == 8) {
-						this.peso += 8;
-						document.getElementById('animalContainer_weight').innerHTML = "Peso: " + this.peso + " kg";
 			}
-		}
-			
-		Perro.prototype.beber = function () {
-			
-			if (this.capacidadEstomago > 0 && this.capacidadConsumoAgua != 0) {
-				this.capacidadConsumoAgua -= this.cantAgua;
-				document.getElementById('animalContainer_capWater').innerHTML = "Consumo de agua: " + this.capacidadConsumoAgua;
+			if (this.capacidadEstomago > 0) {
+				this.capacidadEstomago -= this.cantComida;
 				this.capacidadConsumoAlimento -= 1;
-				document.getElementById('animalContainer_capFood').innerHTML = "Consumo de alimento: " + this.capacidadConsumoAlimento;
 				this.felicidad += 1;
-				document.getElementById('animalContainer_hapiness').innerHTML = "Felicidad: " + this.felicidad + "%";				
-			} else {
-				console.log("El animal no quiere agua");
-				}
+			}
+
+			if (this.capacidadConsumoAlimento == 8) {
+				this.peso += 8;
+			}
+
+			this.updateCard();
 		}
 
-		Perro.prototype.crearProducto = function () {
+		Pato.prototype.beber = function () {
+
+			if (this.capacidadEstomago > 0 && this.capacidadConsumoAgua != 0) {
+				this.capacidadConsumoAgua -= this.cantAgua;
+				this.capacidadEstomago -= 1;
+				this.felicidad += 1;
+				this.updateCard();
+			} else {
+				console.log("El animal no quiere agua");
+			}
+		}
+
+		Pato.prototype.producir = function () {}
+
+		Pato.prototype.crearProducto = function () {
 			if (this.felicidad > 0) {
 				if (this.cantidadDeProducto <= this.capacidadProduccion) {
 					if (this.tiempo >= this.tiempoDeProduction) {
+						this.cantidadDeProducto += this.cantidadDeProductoPorTiempo;
+						var result = this.cantidadDeProducto;
+						result = Math.round(result * 100) / 100;
+						result.toFixed(2);
+						this.cantidadDeProducto = result;
 						this.tiempo = 0;
 						this.felicidad -= 1;
 						this.updateCard();
@@ -65,14 +73,13 @@ var Perro = (
 			}
 		}
 
-		Perro.prototype.update = function () {
+		Pato.prototype.update = function () {
 			this.tiempo++;
 			this.crearProducto();
 		}
-			
 
-		Perro.prototype.addCard = function () {
-			
+		Pato.prototype.addCard = function () {
+
 			this.animalDiv = document.createElement('div');
 			var animalsContainer = document.getElementById('animalsContainer');
 			animalsContainer.appendChild(this.animalDiv);
@@ -97,10 +104,9 @@ var Perro = (
 			this.animalDiv.appendChild(this.infoHappy);
 		}
 
-		Perro.prototype.updateCard = function () {
+		Pato.prototype.updateCard = function () {
 			this.infoHappy.innerHTML = "F: " + this.felicidad + "%";
 		}
-		
-		return Perro;
+		return Pato;
 	}
 )();

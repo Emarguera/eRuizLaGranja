@@ -1,0 +1,99 @@
+{
+    "precios": [{
+        "vaca": 200
+    }, {
+        "cerdo": 200
+    }],
+    "animales": [{
+            "nombre": "VAQUISIMA",
+            "edad": 1,
+            "altura": 1.57,
+            "peso": 435,
+            "capacidadEstomago": 98,
+            "capacidadConsumoAgua": 79,
+            "capacidadConsumoAlimento": 99,
+            "capacidadProduccion": 40,
+            "tipoDeProduccion": "Leche",
+            "felicidad": 60,
+            "animalKind": "vaca"
+        },
+        {
+            "nombre": "PERRISIMO",
+            "edad": 2,
+            "altura": 0.59,
+            "peso": 15,
+            "capacidadEstomago": 20,
+            "capacidadConsumoAgua": 55,
+            "capacidadConsumoAlimento": 99,
+            "capacidadProduccion": 0,
+            "tipoDeProduccion": "Ninguna",
+            "felicidad": 60,
+            "animalKind": "perro"
+        },
+        {
+            "nombre": "GATISIMO",
+            "edad": 3,
+            "altura": 0.43,
+            "peso": 5,
+            "capacidadEstomago": 20,
+            "capacidadConsumoAgua": 10,
+            "capacidadConsumoAlimento": 99,
+            "capacidadProduccion": 0,
+            "tipoDeProduccion": "Ninguna",
+            "felicidad": 80,
+            "animalKind": "gato"
+        },
+        {
+            "nombre": "CERDISIMO",
+            "edad": 4,
+            "altura": 1,
+            "peso": 92,
+            "capacidadEstomago": 71,
+            "capacidadConsumoAgua": 85,
+            "capacidadConsumoAlimento": 99,
+            "capacidadProduccion": 30,
+            "tipoDeProduccion": "Tocino",
+            "felicidad": 100,
+            "animalKind": "cerdo"
+        },
+        {
+            "nombre": "CABALLISIMO",
+            "edad": 5,
+            "altura": 1.45,
+            "peso": 5,
+            "capacidadEstomago": 56,
+            "capacidadConsumoAgua": 15,
+            "capacidadConsumoAlimento": 99,
+            "capacidadProduccion": 0,
+            "tipoDeProduccion": "Ninguna",
+            "felicidad": 85,
+            "animalKind": "caballo"
+        },
+        {
+            "nombre": "GALLINISIMA",
+            "edad": 6,
+            "altura": 0.35,
+            "peso": 3,
+            "capacidadEstomago": 20,
+            "capacidadConsumoAgua": 9,
+            "capacidadConsumoAlimento": 99,
+            "capacidadProduccion": 30,
+            "tipoDeProduccion": "Huevos",
+            "felicidad": 10,
+            "animalKind": "gallina"
+        },
+        {
+            "nombre": "JULIO",
+            "edad": 7,
+            "altura": 0.38,
+            "peso": 4,
+            "capacidadEstomago": 15,
+            "capacidadConsumoAgua": 18,
+            "capacidadConsumoAlimento": 34,
+            "capacidadProduccion": 30,
+            "tipoDeProduccion": "Huevos",
+            "felicidad": 90,
+            "animalKind": "pato"
+        }
+    ]
+}

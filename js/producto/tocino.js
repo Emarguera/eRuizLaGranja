@@ -1,10 +1,8 @@
 var Tocino = (
 	function () {
-		function Tocino() {
-            
+		function Tocino(palmacenamiento) {
+			this.price = 15
 		}
-		//Class Methods
-
-		return Tocino;
+	return Tocino;
 	}
 )();

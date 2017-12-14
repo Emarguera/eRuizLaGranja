@@ -1,10 +1,8 @@
 var Leche = (
 	function () {
-		function Leche() {
-            
+		function Leche(palmacenamiento) {
+			this.price = 25
 		}
-		//Class Methods
-
-		return Leche;
+	return Leche;
 	}
 )();

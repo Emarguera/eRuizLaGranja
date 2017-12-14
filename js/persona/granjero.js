@@ -1,10 +1,7 @@
 var Granjero = (
 	function () {
-		function Granjero() {
-            
-		}
-		//Class Methods
+		function Granjero(pnombre) {
 
-		return Granjero;
+		}
 	}
 )();

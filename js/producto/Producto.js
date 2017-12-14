@@ -1,10 +1,7 @@
 var Producto = (
 	function () {
-		function Producto() {
-            
-		}
-		//Class Methods
+		function Producto(pnombre) {
 
-		return Producto;
+		}
 	}
 )();
