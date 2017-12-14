@@ -164,11 +164,11 @@ function init() {
             var accionProducir = determinarProduccion(currentAnimalSelected.animalKind)
 
             if (accionProducir) {
-                btnProducir.classList.add('btnProduccion');
-                btnProducir.classList.remove('btnOcultar');
+                btnProducir.classList.add('btnProduction');
+                btnProducir.classList.remove('btnHide');
             } else {
-                btnProducir.classList.remove('btnProduccion');
-                btnProducir.classList.add('btnOcultar');
+                btnProducir.classList.remove('btnProduction');
+                btnProducir.classList.add('btnHide');
             }
         }
     }
