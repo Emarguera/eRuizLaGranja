@@ -1,7 +1,7 @@
 var Huevos = (
 	function () {
 		function Huevos(palmacenamiento) {
-			this.price = 10
+			this.price = 17
 		}
 	return Huevos;
 	}

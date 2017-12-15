@@ -1,7 +1,7 @@
 var Leche = (
 	function () {
 		function Leche(palmacenamiento) {
-			this.price = 25
+			this.price = 23
 		}
 	return Leche;
 	}
